@@ -1,0 +1,29 @@
+sylius_grid:
+    grids:
+        lakion_cms_admin_string_block:
+            driver:
+                name: doctrine/phpcr-odm
+                options:
+                    class: "%lakion_cms.model.string_block.class%"
+            fields:
+                name:
+                    type: string
+                    label: sylius.ui.name
+                body:
+                    type: string
+                    label: sylius.ui.body
+            filters:
+                body:
+                    type: string
+                    label: sylius.ui.body
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    show:
+                        type: show
+                    update:
+                        type: update
+                    delete:
+                        type: delete

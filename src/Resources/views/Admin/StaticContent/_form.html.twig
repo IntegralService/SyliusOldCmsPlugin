@@ -1,0 +1,19 @@
+{{ form_errors(form) }}
+
+<div class="ui stackable grid">
+    <div class="three wide column">
+        {{ form_row(form.publishable) }}
+        {{ form_row(form.name) }}
+    </div>
+    <div class="thirteen wide column">
+        <div class="thirteen wide column">
+            {{ form_row(form.title) }}
+            {{ form_row(form.body) }}
+        </div>
+
+        <div class="thirteen wide column">
+            {{ form_row(form.meta_keywords) }}
+            {{ form_row(form.meta_description) }}
+        </div>
+    </div>
+</div>

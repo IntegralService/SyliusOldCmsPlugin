@@ -1,0 +1,8 @@
+/var/
+!/var/.gitkeep
+
+/web/
+!/web/.gitkeep
+
+/node_modules/
+/npm-debug.log
